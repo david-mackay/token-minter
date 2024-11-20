@@ -3,7 +3,7 @@
 import { createAppKit } from '@reown/appkit/react'
 import { Ethers5Adapter } from '@reown/appkit-adapter-ethers5'
 import { SolanaAdapter } from '@reown/appkit-adapter-solana'
-import { mainnet, arbitrum, solana, solanaTestnet, solanaDevnet } from '@reown/appkit/networks'
+import { mainnet, sepolia, solana, solanaTestnet, solanaDevnet, optimism } from '@reown/appkit/networks'
 import { PhantomWalletAdapter, SolflareWalletAdapter } from '@solana/wallet-adapter-wallets'
 
 // 1. Get projectId at https://cloud.reown.com
@@ -29,7 +29,7 @@ createAppKit({
     solanaAdapter
   ],
   metadata: metadata,
-  networks: [mainnet, arbitrum, solana, solanaTestnet, solanaDevnet],
+  networks: [mainnet, sepolia, optimism, solana, solanaTestnet, solanaDevnet],
   projectId,
   features: {
     analytics: true // Optional - defaults to your Cloud configuration
