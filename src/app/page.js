@@ -257,7 +257,7 @@ export default function Home() {
           </div>
         ) : (
           <div>
-            <w3m-account-button className="text-white mb-2"></w3m-account-button>
+            <w3m-account-button className="flex flex-col items-center justify-center text-white mb-2"></w3m-account-button>
 
             {/* Tasks Section */}
             <div className="mb-8">
